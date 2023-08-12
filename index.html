@@ -1,0 +1,59 @@
+<!-- This is the structure of the converter -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Temperature Converter</title>
+
+		<link href="style.css" type="text/css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap">
+	</head>
+
+	<body>
+		<!-- title class -->
+		<div class="title">
+			<h1>Temperature Converter</h1>
+			<img src="thermometer.png" alt="thermometer">
+		</div>
+		<!-- title class ends -->
+		<!-- container class -->
+		<div class="container">
+			<form action="">
+				<!-- task class -->
+				<div class="task">
+
+					<div class="from-container task-containers">
+						<label for="input">From:</label>
+						<input type="text" placeholder="Input" id="input">
+						<select id="inputType" name="from">
+							<option value="Celsius" selected>Degree Celsius</option>
+							<option value="Fahrenheit">Fahrenheit</option>
+							<option class="Kelvin">Kelvin</option>
+						</select>
+					</div>
+
+					<div class="to-container task-containers">
+						<label for="result">To:</label>
+						<input type="text" placeholder="Result" id="result">
+						<select id="resultType" name="to">
+							<option value="Celsius">Degree Celsius</option>
+							<option value="Fahrenheit" selected>Fahrenheit</option>
+							<option class="Kelvin">Kelvin</option>
+						</select>
+					</div>
+
+				</div>
+				<input type="reset">
+			</form>
+		</div>
+		<!-- container class ends -->
+		<footer>
+			&copy; Swati Santhosh
+		</footer>
+		<!-- script -->
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

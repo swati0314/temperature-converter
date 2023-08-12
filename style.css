@@ -1,0 +1,115 @@
+/* this is the file used to style the elements */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: peachpuff;
+	background-image: linear-gradient(0deg, #d3d3d3 10%, #add8e6 20%);
+}
+
+.title {
+	text-align: center;
+}
+
+.title h1 {
+	text-align: center;
+	color: rgb(56, 56, 56);
+	font-weight: 900;
+	padding-top: 20px;
+	font-size: 2.3rem;
+}
+
+.title img {
+	width: 40px;
+	padding-top: 6px;
+	position: relative;
+	left: -250px;
+	top: -50px;
+}
+
+footer {
+	margin-top: 70px;
+	font-size: 12px;
+	font-weight: bold;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 7px;
+}
+
+.container {
+	padding: 20px;
+	margin-left: 30px auto;
+}
+
+.task {
+	display: flex;
+	gap: 40px;
+	justify-content: space-around;
+	width: 60%;
+	margin: auto;
+}
+
+.task-containers {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 0;
+	width: 90%;
+}
+
+label {
+	font-size: x-large;
+	font-weight: 600;
+}
+
+input, select {
+	margin-bottom: 20px;
+	padding: 10px;
+	font-size: large;
+	outline-color: rgb(179, 167, 0);
+	border: none;
+	border-radius: 5px;
+	box-shadow: 10px 10px 10px rgba(177, 177, 177, 0.55);
+}
+
+form {
+	display: grid;
+	place-items: center;
+}
+
+input[type="reset"] {
+	width: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.task-containers {
+		width: 100%;
+	}
+
+	.task {
+		width: 100%;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	input, select {
+		margin-bottom: 20px;
+		padding: 10px;
+	}
+
+	input[type="reset"] {
+		width: 100%;
+	}
+}
